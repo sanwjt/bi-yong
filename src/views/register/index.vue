@@ -1,7 +1,7 @@
 <!--
  * @Author: your name
  * @Date: 2020-07-11 17:42:16
- * @LastEditTime: 2020-07-11 22:56:57
+ * @LastEditTime: 2020-07-11 23:03:13
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /bi-yong/src/views/register/index.vue
@@ -10,15 +10,14 @@
   <div class="content">
     <!-- header -->
      <div class="header"> 
-       <div class="qiezuo">
-       </div>
+       <div class="qiezuo"></div>
        <section class="text">
          <p>企业报名需填写以下信息</p>
          <p>报名时间截止为  2020年7月26日</p>
          <p>（以下均为必填项）</p>
        </section>
-      <div class="qieyou">
-      </div>
+       <div class="qieyou"></div>
+       <img class="result" src="~@/assets/chenggong.png" alt="">
      </div>
      <!-- 表单 -->
      <form action=""  class="formBox">
@@ -130,6 +129,7 @@ export default {
   padding-bottom: 21px;
 }
 .header{
+  position: relative;
   font-size:12px;
   font-family:PingFang SC;
   font-weight:400;
@@ -244,6 +244,12 @@ export default {
   font-size: 10px;
   text-align: center;
   margin-top: 15px;
+}
+
+.result{
+  position: absolute;
+  top: -5px;
+  right: 0;
 }
 
 h3 {
