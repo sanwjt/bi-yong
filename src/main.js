@@ -1,23 +1,23 @@
 /*
  * @Author: your name
  * @Date: 2020-07-11 16:41:27
- * @LastEditTime: 2020-07-11 18:28:03
+ * @LastEditTime: 2020-07-11 22:47:36
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /bi-yong/src/main.js
  */ 
 import Vue from 'vue'
-import Antd from 'ant-design-vue';
+import Vant from 'vant';
 import App from './App.vue'
 import router from './router';
-import 'ant-design-vue/dist/antd.css';
 import './views/reset.css';
+import 'vant/lib/index.css';
+
 
 
 import './utils/flexible';
-
+Vue.use(Vant);
 Vue.config.productionTip = false
-Vue.use(Antd);
 
 router.beforeEach((to, from, next) => {
   /* 路由发生变化修改页面title */

@@ -41,3 +41,18 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+
+select{
+  appearance:none;
+  -moz-appearance:none;
+  -webkit-appearance:none;
+}
+
+input{  
+	background:none;  
+	outline:none;  
+	/* border:1px solid #ccc; */
+}
+/* input:focus{   
+	border:none;
+} */
