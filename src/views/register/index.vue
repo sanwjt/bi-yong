@@ -1,7 +1,7 @@
 <!--
  * @Author: your name
  * @Date: 2020-07-11 17:42:16
- * @LastEditTime: 2020-07-11 23:03:13
+ * @LastEditTime: 2020-07-12 18:24:39
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /bi-yong/src/views/register/index.vue
@@ -127,130 +127,136 @@ export default {
   padding: 0 21px;
   padding-top: 35px;
   padding-bottom: 21px;
-}
-.header{
-  position: relative;
-  font-size:12px;
-  font-family:PingFang SC;
-  font-weight:400;
-  color:rgba(251,229,181,1);
-  display: flex;
-  justify-content: space-between;
-  .text{
-   width: 176px;
-   text-align: center;
-   p{
-     margin-bottom: 2px;
-   }
-  }
 
-  div {
-    height: 100%;
-    width: 55px;
-    height: 36px;
-  }
+  .header{
+      position: relative;
+      font-size:12px;
+      font-family:PingFang SC;
+      font-weight:400;
+      color:rgba(251,229,181,1);
+      display: flex;
+      justify-content: space-between;
+      .text{
+      width: 176px;
+      text-align: center;
+      p{
+        margin-bottom: 2px;
+      }
+      }
 
-  .qiezuo{
-    background: url('~@/assets/qiyeyou.png') no-repeat center;
-    background-size: 100%;
-  }
-  .qieyou{
-    background: url('~@/assets/qiyezuo.png') no-repeat center;
-    background-size: 100%;
-  }
+      div {
+        height: 100%;
+        width: 55px;
+        height: 36px;
+      }
+
+      .qiezuo{
+        background: url('~@/assets/qiyeyou.png') no-repeat center;
+        background-size: 100%;
+      }
+      .qieyou{
+        background: url('~@/assets/qiyezuo.png') no-repeat center;
+        background-size: 100%;
+      }
+      }
+
+      .formBox{
+          .commonStyle {
+            font-size:12px;
+            width: 100%;
+            height: 36px;
+            padding:10px;
+            background: #0C0D0D;
+            color:rgba(251,229,181,.5);
+            font-family:PingFang SC;
+            margin-top: 27px;
+            border:0.5px solid rgba(204,204,204,.5);
+            box-sizing:border-box;
+            // -webkit-box-shadow: 0 1px 1px -1px rgba(0, 0, 0, 0.5);
+          }
+          .logoItem{
+            font-size: 14px;
+            color:rgba(251,229,181,1);
+            margin-top: 27px;
+          }
+          .tips{
+            font-size:10px;
+            font-family:PingFang SC;
+            font-weight:400;
+            color:rgba(102,102,102,1);
+            margin-top: 7px;
+            margin-bottom: 15px;
+            display: block;
+          }
+          .van-uploader__preview-delete{
+            color: #fbe5b5;
+
+          }
+          .van-uploader__preview-image{
+            background: #1A1F26;
+            border-radius:unset;
+            padding:12px;
+          }
+          
+          .van-field{
+            background: #0C0D0D;
+            border:0.5px solid rgba(204,204,204,.5);
+            font-size: 12px;
+            margin-top: 27px;
+          
+          }
+          .van-field__control{
+            color:rgba(251,229,181,.5);
+          }
+          .van-cell::after{
+            border:none
+          }
+
+          .van-uploader__upload{
+            border-radius: unset;
+            height:100px;
+            width: 100px;
+            background:url('~@/assets/shangchuan.png') no-repeat center;
+          border:0.5px dashed rgba(204,204,204,.5);
+          }
+          textarea::-webkit-input-placeholder {
+            color: #999999;
+          }
+          input::-webkit-input-placeholder {
+          color: #999999;
+          }
+      }
+
+    .buttonbox{
+      text-align: center;
+    }
+    .button{
+      display: inline-block;
+      margin-top:48px;
+      width: 247px;
+      height: 46px;
+      background: url('~@/assets/anniu11.png') no-repeat center;
+      text-align: center;
+      line-height: 46px;
+      font-size: 18px;
+    } 
+    .footer{
+      color:#666666;
+      font-size: 10px;
+      text-align: center;
+      margin-top: 15px;
+    }
+
+    .result{
+      position: absolute;
+      top: -5px;
+      right: 0;
+    }
 }
 
-.formBox{
-  .commonStyle {
-    font-size:12px;
-    width: 100%;
-    height: 36px;
-    padding:10px;
-    background: #0C0D0D;
-    color:rgba(251,229,181,.5);
-    font-family:PingFang SC;
-    margin-top: 27px;
-    border:0.5px solid rgba(204,204,204,.5);
-    box-sizing:border-box;
-    // -webkit-box-shadow: 0 1px 1px -1px rgba(0, 0, 0, 0.5);
-  }
-  .logoItem{
-    font-size: 14px;
-    color:rgba(251,229,181,1);
-    margin-top: 27px;
-  }
-  .tips{
-    font-size:10px;
-    font-family:PingFang SC;
-    font-weight:400;
-    color:rgba(102,102,102,1);
-    margin-top: 7px;
-    margin-bottom: 15px;
-    display: block;
-  }
-  .van-uploader__preview-delete{
-    color: #fbe5b5;
 
-  }
-  .van-uploader__preview-image{
-    background: #1A1F26;
-    border-radius:unset;
-    padding:12px;
-  }
-  
-  .van-field{
-    background: #0C0D0D;
-    border:0.5px solid rgba(204,204,204,.5);
-    font-size: 12px;
-    margin-top: 27px;
-  
-  }
-  .van-field__control{
-    color:rgba(251,229,181,.5);
-  }
-  .van-cell::after{
-    border:none
-  }
 
-  .van-uploader__upload{
-    border-radius: unset;
-    height:100px;
-    width: 100px;
-    background:url('~@/assets/shangchuan.png') no-repeat center;
-   border:0.5px dashed rgba(204,204,204,.5);
-  }
-  textarea::-webkit-input-placeholder {
-    color: #999999;
-   }
-  input::-webkit-input-placeholder {
-  color: #999999;
-  }
-}
-.buttonbox{
-  text-align: center;
-}
-.button{
-  display: inline-block;
-  margin-top:48px;
-  width: 247px;
-  height: 46px;
-  background: url('~@/assets/anniu11.png') no-repeat center;
-  text-align: center;
-  line-height: 46px;
-  font-size: 18px;
-} 
-.footer{
-  color:#666666;
-  font-size: 10px;
-  text-align: center;
-  margin-top: 15px;
-}
 
-.result{
-  position: absolute;
-  top: -5px;
-  right: 0;
-}
 
 h3 {
   margin: 40px 0 0;
